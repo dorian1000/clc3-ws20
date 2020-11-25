@@ -1,16 +1,13 @@
-# Pull in the layer of the base image: alpine:3.10.3
-FROM alpine:3.10.3     
+# Pull in the layer of the base image: golang:1.11-alpine 
+FROM golang:1.11-alpine
 
-# Set maintainer label: maintainer=[YOUR-EMAIL]
-
+# Set author label: LABEL author=[YOUR-EMAIL]
 
 # Set working directory: `/opt`
 
-
 # Copy local file `main.go` to the working directory
 
+# List items in the working directory (ls -lsa) and show content of the `main.go`file (cat)
 
-# List items in the working directory (ls)
+# Build the app (CGO_ENABLED=0 go build -o /usr/myapp) and show the /usr directory  (ls -lsa)
 
-
-# Show content of the `main.go` during the build process (cat)
