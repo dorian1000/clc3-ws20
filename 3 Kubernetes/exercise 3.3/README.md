@@ -23,7 +23,7 @@ In this exercise, you will specify a deployment (supervisor) for your pod by def
         spec:
           containers:
           - name: demo
-            image: YOUR-DOCKERHUB-ACCOUNT/demo:time
+            image: agrimmer/demo:time
             ports:
             - containerPort: 8888
     ```
@@ -83,3 +83,5 @@ In this exercise, you will specify a deployment (supervisor) for your pod by def
     ```
 
     :mag: What is your observation? 
+
+1. Increase the number of replicas to 3. Research at least two different approaches.
